@@ -30,7 +30,7 @@ try:
     submit_button.click()
 
     wait.until(EC.url_contains("#/main"))
-    print("Course selection")
+    print("seleção de curso - 1")
     
     small_wait = WebDriverWait(driver, 5)
 
@@ -46,9 +46,9 @@ try:
         accept.click()
 
     except TimeoutException:
-        print("No course selection... skiping")
+        print("TimeOut")
 
 
 finally:
-    input("press enter to quit")
+    input("Enter para sair: ")
     driver.quit()
